@@ -1,9 +1,10 @@
 package main
+
 import "fmt"
 
-func main () {
+func main() {
 	var n, m int
-	fmt.Scanf("%d %d", &n, %m)
+	fmt.Scanf("%d %d", &n, &m)
 	q := make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &q[i])
@@ -36,8 +37,8 @@ func main () {
 		//然后陷入到上面的死循环
 
 		if q[l] != x {
-			fmt.Println("-1 -1")	//这是找到了l=r跳出了for之后还是没有找到x
-									//判断x不存在
+			fmt.Println("-1 -1") //这是找到了l=r跳出了for之后还是没有找到x
+			//判断x不存在
 		} else {
 			fmt.Print(l, " ")
 			l, r := 0, n-1
@@ -60,7 +61,7 @@ func main () {
 
 			fmt.Println(l)
 			//Print和Println共同输出(l l(处理后))
-		
+
 		}
 	}
 
